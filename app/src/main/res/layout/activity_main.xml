@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/LinearLayout1"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:text="当前没有任何定时器"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="150dp"
+        android:id="@+id/txt1"
+        android:textColor="#A9E633"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:text="请点击右上角添加"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:id="@+id/txt2"
+        android:textColor="#A9E633"/>
+
+
+</LinearLayout>
+</ScrollView>

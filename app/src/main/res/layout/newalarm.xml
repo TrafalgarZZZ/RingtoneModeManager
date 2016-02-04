@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:text="时间选择"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"/>
+
+    <View
+        android:layout_height="1dp"
+        android:background="?android:attr/dividerVertical"
+        android:layout_width="match_parent"/>
+
+    <TimePicker
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/TimePicker"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:text="情景模式选择"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"/>
+
+    <View
+        android:layout_height="1dp"
+        android:background="?android:attr/dividerVertical"
+        android:layout_width="match_parent"/>
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="标准"
+            android:textSize="20sp"
+            android:id="@+id/RButton1"
+            android:textColor="#0088FC"/>
+
+        <RadioButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="静音"
+            android:textSize="20sp"
+            android:id="@+id/RButton2"/>
+
+        <RadioButton
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="振动"
+        android:textSize="20sp"
+        android:id="@+id/RButton3"/>
+
+
+    </RadioGroup>
+
+    <EditText
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/timeEdit"
+        android:layout_gravity="left"
+        android:hint="持续时间（单位：分钟）"
+        android:singleLine="true"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:text="锁定模式"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"/>
+
+        <Switch
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="170dp"
+            android:id="@+id/lock_switch" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_height="1dp"
+        android:background="?android:attr/dividerVertical"
+        android:layout_width="match_parent"/>
+
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:text="对所选模式时间范围内锁定，在该锁定时间内情景模式将无法被更改"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="wrap_content"/>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:text="确定"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:id="@+id/btn1"/>
+
+
+</LinearLayout>
+</ScrollView>
+
